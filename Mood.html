@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driftlight – Uplift</title>
+  <link rel="stylesheet" href="web.css"/>
+</head>
+<body>
+    <nav class="main-nav">
+    <div class="logo">🌀 Driftlight</div>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Mood.html">Mood</a></li>
+      <li><a href="SQ.html">Search</a></li>
+      <li><a href="Sub.html">Submit</a></li>
+    </ul>
+  </nav>
+
+<main class="mood-section">
+  <h2>Choose Your Mood</h2>
+  <form id="mood-form">
+    <select id="mood">
+
+      <option value="" disabled selected>Select your mood</option>
+       <option value="happy">😊 Happy</option>
+       <option value="sad">😢 Sad</option>
+       <option value="Lost">😶‍🌫️ Lost</option>
+       <option value="Anxious">😰 Anxious</option>
+       <option value="Lonely">🥺 Lonely</option>
+       <option value="Depressed">😔 Depressed</option>
+       <option value="Overwhelmed">😩 Overwhelmed</option>
+       <option value="Tired">😴 Tired</option>
+
+    </select>
+    <button type="button" onclick="loadQuote()">Get Quote</button>
+  </form>
+
+  <div class="quote-board" id="quote-board">
+    <p id="quote-text">Your quote will appear here.</p>
+    <span id="quote-author"></span>
+  </div>
+</main>
+   <script src="web.js"></script>
+</body>
+</html>

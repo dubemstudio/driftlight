@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Quotes - Driftlight</title>
+  <link rel="stylesheet" href="web.css"/>
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="logo">🌀 Driftlight</div>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Mood.html">Mood</a></li>
+      <li><a href="SQ.html">Search</a></li>
+      <li><a href="Sub.html">Submit</a></li>
+    </ul>
+  </nav>
+
+  <main class="search-suggestions-wrapper">
+    <section class="search-box">
+      <h2>🔍 Search All Quotes</h2>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Type a keyword..." required />
+        <button type="submit">Search</button>
+      </form>
+      <div id="search-results" class="quote-board">
+        <p>Start typing to find quotes...</p>
+      </div>
+    </section>
+
+    <section class="suggestion-box">
+      <h3>💡 Tips & Suggestions</h3>
+      <form id="suggestion-form">
+        <textarea placeholder="Suggest a feature, improvement, or type of quote you'd love to see..." required></textarea>
+        <button type="submit">Send Suggestion</button>
+        <p id="suggestion-feedback" style="margin-top:10px;"></p>
+      </form>
+    </section>
+  </main>
+  <script src="web.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit a Quote</title>
+  <link rel="stylesheet" href="web.css" />
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="logo">🌀 Driftlight</div>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Mood.html">Mood</a></li>
+      <li><a href="SQ.html">Search</a></li>
+      <li><a href="Sub.html">Submit</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="submit-quote">
+      <h2>Submit Your Favorite Quote</h2>
+      <form id="submit-quote-form">
+        <textarea placeholder="Write your quote here..." required></textarea>
+        <input type="text" placeholder="Author (optional)" />
+        <button type="submit">Submit Quote</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Your Favorite Quotes</h2>
+      <div id="favorites-list" class="quote-board">
+        <p>No favorites saved yet.</p>
+      </div>
+    </section>
+
+    <section class="email-sub">
+      <h3>Subscribe for Daily Inspiration</h3>
+      <form id="subscribe-form">
+        <input type="email" placeholder="Your email..." required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <button id="floating-inspiration" title="Get Random Quote">✨</button>
+
+  <script src="web.js"></script>
+</body>
+</html>
